@@ -52,7 +52,7 @@ const Main:FC = () => {
 
     return  (
         <>
-            <div className='top-0 w-full h-[2%] bg-yellow-300 text-black flex justify-center items-center mb-[1.5%] text-center px-[1%]'>
+            <div className='top-0 w-full h-[2%] bg-yellow-300 text-black flex justify-center items-center lg:mb-[1.5%] mb-[4%] text-center px-[1%]'>
                 Данное меню не является лекарственным средством и не заменяет индивидуальный план питания, перед использованием рекомендуется консультация лечащего врача.
             </div>
 
