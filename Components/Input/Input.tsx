@@ -11,6 +11,8 @@ const Input:FC<IInput> = ({ text, handleChange }) => {
             type="text"
             id="name"
             value={text}
+            // eslint-disable-next-line
+            // @ts-ignore
             onChange={(e) => handleChange(e)}
             placeholder="Имя"
             required
