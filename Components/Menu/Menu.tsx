@@ -18,8 +18,8 @@ const Menu:FC<IMenu> = ({ day, setDay }) => {
                     // @ts-ignore
                     onClick={() => setDay(el)}
                     className={cn({
-                        'lg:w-[14%] w-[13%] text-black p-[1%] bg-[#2bb55c] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#32c967] transition-all': day == el,
-                        'lg:w-[14%] w-[13%] text-black p-[1%] bg-[#51cfc8] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#59ded6] transition-all': !(day == el)
+                        'lg:w-[14%] w-[13%] text-white p-[1%] bg-[#79793F] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#78864B] transition-all': day == el,
+                        'lg:w-[14%] w-[13%] text-black p-[1%] bg-[#EEE8BF] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#BDB67D] transition-all border-[1px]': !(day == el)
                         
                     })}>
                     {el}
