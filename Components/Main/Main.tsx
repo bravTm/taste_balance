@@ -60,7 +60,7 @@ const Main:FC = () => {
 
             <div className='flex flex-col justify-center items-center'>
                 
-                <div className='text-black font-bold flex justify-center items-center mt-[2%] mb-[]'>
+                <div className='text-black font-bold flex justify-center items-center lg:mt-[2%] lg:mb-[2%] mt-[4.5%] mb-[4.5%]'>
                     {isPregnant == 'Беременна' ? caloriesPregnant[day] : 
                     age == 'Ребенок' && diabetType == '1 тип(СД1)' ? caloriesKidsSD1[day] :
                     age == 'Ребенок' && diabetType == '2 тип(СД2)' ? caloriesKidsSD2[day] :
