@@ -10,7 +10,7 @@ interface IMenu {
 
 const Menu:FC<IMenu> = ({ day, setDay }) => {
     return (
-        <div className='flex justify-between items-center ml-[5%] mr-[5%] text-lg'>
+        <div className='flex justify-between items-center lg:ml-[5%] lg:mr-[5%] ml-[2%] mr-[2%] text-lg'>
             {menu.map((el, idx) => (
                 <div 
                     key={idx} 
@@ -18,8 +18,8 @@ const Menu:FC<IMenu> = ({ day, setDay }) => {
                     // @ts-ignore
                     onClick={() => setDay(el)}
                     className={cn({
-                        'w-[14%] text-black p-[1%] bg-[#2bb55c] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#32c967] transition-all': day == el,
-                        'w-[14%] text-black p-[1%] bg-[#51cfc8] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#59ded6] transition-all': !(day == el)
+                        'lg:w-[14%] w-[13%] text-black p-[1%] bg-[#2bb55c] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#32c967] transition-all': day == el,
+                        'lg:w-[14%] w-[13%] text-black p-[1%] bg-[#51cfc8] flex justify-center items-center cursor-pointer rounded-sm hover:bg-[#59ded6] transition-all': !(day == el)
                         
                     })}>
                     {el}
