@@ -8,7 +8,7 @@ interface IDishComponent {
 const Dish:FC<IDishComponent> = ({ text, title }) => {
 
     return text ? (
-        <div className='w-[97%] lg:w-[90%] flex justify-between text-lg mt-[0.5%] mb-[0.5%]'>
+        <div className='w-full flex justify-between text-lg mt-[0.5%] mb-[0.5%]'>
             <p className='w-[25%] font-bold bg-green-400 flex justify-center items-center p-[1%] rounded-l-sm'>
                 {title}
             </p>
