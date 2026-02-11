@@ -24,8 +24,8 @@ const Toggle:FC<IToggle> = ({ title, setState, text, array }) => {
                 <div className='flex justify-between w-full'>
                     {array.map((el, idx) => (
                         <div key={idx} className={cn({
-                            "bg-[#0bdbdb] cursor-pointer p-[3%] w-[33%] flex justify-center items-center rounded-sm": text == el,
-                            "cursor-pointer p-[3%] bg-[#c4cfcf] w-[33%] flex justify-center items-center transition-all hover:bg-[#c2cccc] rounded-sm": !(text == el)
+                            "bg-[#BDB67D] cursor-pointer p-[3%] w-[33%] flex justify-center items-center rounded-sm": text == el,
+                            "cursor-pointer p-[3%] border-[1px] bg-[#EEE8BF] w-[33%] flex justify-center items-center transition-all hover:bg-[#c2cccc] rounded-sm": !(text == el)
                         })}
                             // eslint-disable-next-line
                             // @ts-ignore
@@ -42,8 +42,8 @@ const Toggle:FC<IToggle> = ({ title, setState, text, array }) => {
                 <div className='flex justify-between w-full'>
                     {array.map((el, idx) => (
                         <div key={idx} className={cn({
-                            "bg-[#0bdbdb] cursor-pointer p-[3%] w-[49%] flex justify-center items-center rounded-sm": text == el,
-                            "cursor-pointer p-[3%] bg-[#c4cfcf] w-[49%] flex justify-center items-center transition-all hover:bg-[#c2cccc] rounded-sm": !(text == el)
+                            "bg-[#BDB67D] cursor-pointer p-[3%] w-[49%] flex justify-center items-center rounded-sm": text == el,
+                            "cursor-pointer p-[3%] border-[1px] bg-[#EEE8BF] w-[49%] flex justify-center items-center transition-all hover:bg-[#c2cccc] rounded-sm": !(text == el)
                         })}
                             // eslint-disable-next-line
                             // @ts-ignore
