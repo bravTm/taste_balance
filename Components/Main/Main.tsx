@@ -58,7 +58,7 @@ const Main:FC = () => {
 
             <Menu day={day} setDay={setDay}/>
 
-            {/* <div className='flex flex-col justify-center items-center'> */}
+            <div className='flex flex-col justify-center items-center'>
                 
                 <div className='text-black font-bold flex justify-center items-center mt-[2%] mb-[]'>
                     {isPregnant == 'Беременна' ? caloriesPregnant[day] : 
@@ -124,7 +124,7 @@ const Main:FC = () => {
                 )  }
                 
 
-            {/* </div> */}
+            </div>
         </>
     )
 }
