@@ -25,7 +25,7 @@ const Toggle:FC<IToggle> = ({ title, setState, text, array }) => {
                     {array.map((el, idx) => (
                         <div key={idx} className={cn({
                             "bg-[#BDB67D] cursor-pointer p-[3%] w-[33%] flex justify-center items-center rounded-sm": text == el,
-                            "cursor-pointer p-[3%] border-[1px] bg-[#EEE8BF] w-[33%] flex justify-center items-center transition-all hover:bg-[#c2cccc] rounded-sm": !(text == el)
+                            "cursor-pointer p-[3%] border-[1px] bg-[#EEE8BF] w-[33%] flex justify-center items-center transition-all hover:bg-[#ded8b1] rounded-sm": !(text == el)
                         })}
                             // eslint-disable-next-line
                             // @ts-ignore
@@ -43,7 +43,7 @@ const Toggle:FC<IToggle> = ({ title, setState, text, array }) => {
                     {array.map((el, idx) => (
                         <div key={idx} className={cn({
                             "bg-[#BDB67D] cursor-pointer p-[3%] w-[49%] flex justify-center items-center rounded-sm": text == el,
-                            "cursor-pointer p-[3%] border-[1px] bg-[#EEE8BF] w-[49%] flex justify-center items-center transition-all hover:bg-[#c2cccc] rounded-sm": !(text == el)
+                            "cursor-pointer p-[3%] border-[1px] bg-[#EEE8BF] w-[49%] flex justify-center items-center transition-all hover:bg-[#ded8b1] rounded-sm": !(text == el)
                         })}
                             // eslint-disable-next-line
                             // @ts-ignore
